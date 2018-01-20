@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sign-Up Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .border {
+                border-style: solid ;
+                border-color: darkgrey ;
+                border-radius: 1.5%;
+                width: 350px ;
+            }
+            tr,td {
+                padding-bottom: 5px;
+                padding-top: 5px;
+            }
+            a {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <h1>
+                Leave Management Software
+            </h1>
+        </div>
+        <div align="center">
+            <div class="border">
+                <h2>Sign Up</h2>
+                <form action="home.jsp" method="post">
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Department</td>
+                            <td>
+                                <select id="department" name="department" required>
+                                    <option value="Computer">Computer</option>
+                                    <option value="Mechanical">Mechanical</option>
+                                    <option value="Civil">Civil</option>
+                                    <option value="It">I.T.</option>
+                                    <option value="Entc">E&TC</option>
+                                    <option value="Electrical">Electrical</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Designation</td>
+                            <td>
+                                <select id="designation" name="designation" required>
+                                    <option value="Professor">Professor</option>
+                                    <option value="Assistant Professor">Assistant Professor</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text" name="username" required></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="password" required></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td><input type="number" name="phone" required></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><input type="text" name="addr" required></td>
+                        </tr>
+                        <tr>
+                            <td>Qualification</td>
+                            <td>
+                                <select id="qual" name="qual" required>
+                                    <option value="BE">B.E.</option>
+                                    <option value="ME">M.E.</option>
+                                    <option value="Phd">Phd</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="padding-bottom: 5px; padding-top: 20px;">
+                    <input type="submit" value="Sign Up">
+                    </div>
+                </form>
+                <h4>
+                    Already Have An Account?<br>
+                <a href="index.html">
+                    Log In
+                </a>
+                </h4>
+            </div>
+        </div>
+    </body>
+</html>

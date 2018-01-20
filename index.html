@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Leave Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .border {
+                border-style: solid ;
+                border-color: darkgrey ;
+                border-radius: 1.5%;
+                width: 300px ;
+            }
+            tr,td {
+                padding-bottom: 5px;
+                padding-top: 5px;
+            }
+            a {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body style="background: #FAFAFA">
+        <div align="center">
+            <h1>
+                Leave Management Software
+            </h1>
+        </div>
+        <div align="center">
+            <div class="border">
+                <h2>Log In</h2>
+                <div>
+                    <form action="intermediate_page.jsp" method="post">
+                        <table>
+                            <tr>
+                                <td>Username </td>
+                                <td><input type="text" name="uname" required></td>
+                            </tr>
+                            <tr>
+                                <td>Password </td>
+                                <td><input type="password" name="pwd" required></td>
+                            </tr>
+                        </table>
+                        <div style="padding-bottom: 5px; padding-top: 20px;">
+                        <input type="submit" value="Login">
+                        </div>
+                    </form>
+                    <h4>
+                        Don't Have An Account?<br>
+                    <a href="signup.html">
+                        Sign-Up
+                    </a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
